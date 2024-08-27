@@ -7,11 +7,22 @@
 
 .header {
 
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../RESOURSE/IMG/banner.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: 10px;
+}
+
+.header2  {
+
+    min-height: 8vh;
+    width: 100%;
+    background-size: 20vw;
+    background-position: center;
+    background-color: #000 ;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -36,15 +47,27 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: #fff;
+    margin-bottom: 0;
+}
+
+.fa-solid{
+color:#fff;
+}
+
+.fa-house{
+    font-size: 30px;
+    margin-top: 3px;
 }
 
 .login-btn {
     background: #fff;
     color: #000;
-    padding: 8px 20px;
+    padding: 10px 15px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
+ 
+
 }
 
 .form-btn {
@@ -297,6 +320,16 @@ nav .fa-bars {
         right: 7%;
         color: #fff;
         font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav .fa-house{
+        display: block;
+        position: fixed;
+        top: 4%;
+        right: 15%;
+        color: #fff;
+        font-size: 28px;
     }
 
     .hidemenu {
@@ -417,9 +450,13 @@ nav .fa-bars {
 
 div .login-btn {
     background-color: #fff;
-    margin-bottom: 20px;
     color: #000;
     cursor: pointer;
+}
+
+div h1{
+
+    margin-top: 60px;
 }
 
 .input-text {
@@ -434,3 +471,4 @@ div .login-btn {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
+
