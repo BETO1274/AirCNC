@@ -105,7 +105,7 @@ function login() {
         alert('Por favor valida tus datos');
 
     }
-    console.log(sPassword)
+
 
 
 
