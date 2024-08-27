@@ -7,6 +7,8 @@
   <title>Sign up</title>
   <link rel="stylesheet" href="../CSS/style.css">
   <script src="https://kit.fontawesome.com/0b3434a60b.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../JS/js.js"></script>
+
 </head>
 
 <body>
@@ -14,13 +16,14 @@
   <div class="header">
 
     <nav id="navBar">
-      <img src="LOGO" alt="" class="logo">
+      <img src="#" alt="" class="logo">
       <ul class="nav-links">
 
         <li><a href="#"> Lugares populares</a></li>
         <li><a href="#"> Viaja al exterior</a></li>
         <li><a href="#"> Paquetes en linea</a></li>
       </ul>
+      <a href="../HTML/login.html" class="login-btn"> Iniciar sesion</a>
       <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
 
     </nav>
@@ -28,10 +31,10 @@
     <div class="login-container">
       <div class="login-box">
         <h2>AirCNC</h2>
-        <input type="text" class="input-text" placeholder="Nombre de usuario" />
         <input type="email" class="input-text" placeholder="Email" />
-        <input type="password" class="input-text" placeholder="Contraseña" />
-        <a href="home.html" class="login-btn">Registrarse</a>
+        <input id="username" type="text" class="input-text" placeholder="Nombre de usuario" />
+        <input id="password" type="password" class="input-text" placeholder="Contraseña" />
+        <a onclick="registry()" class="login-btn">Registrarse</a>
         <p>Al registrarte, aceptas terminos y condiciones y nuestra politica de privacidad</p>
       </div>
     </div>

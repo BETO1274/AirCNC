@@ -47,6 +47,15 @@ nav {
     font-size: 14px;
 }
 
+.form-btn {
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .container {
     padding: 0 7%;
 }
@@ -359,14 +368,14 @@ nav .fa-bars {
         top: 65%;
     }
 
-    .login-box{
-        
+    .login-box {
+
         width: 90%;
         margin: 100px;
         padding: 20px 10px 30px 30px;
         border-radius: 5px;
         position: relative;
-        
+
     }
 }
 
@@ -381,7 +390,7 @@ nav .fa-bars {
 }
 
 .login-box {
-   
+
     padding: 40px;
     border-radius: 10px;
     box-shadow: 10vw 10vw 10vw 10vw rgba(0, 0, 0, 0.1);
@@ -389,7 +398,7 @@ nav .fa-bars {
     max-height: 30vw;
 }
 
-.login-box a{
+.login-box a {
     text-decoration: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -410,6 +419,7 @@ div .login-btn {
     background-color: #fff;
     margin-bottom: 20px;
     color: #000;
+    cursor: pointer;
 }
 
 .input-text {
@@ -424,5 +434,3 @@ div .login-btn {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
-
