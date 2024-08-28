@@ -90,6 +90,7 @@ function registry() {
 
         localStorage.setItem(username, password);
         window.location.href = 'index.html'
+        alert("Usuario registrado con exito")
     }
 
 
@@ -107,7 +108,6 @@ function login() {
         return 0;
     } else if (password === sPassword) {
         window.location.href = "index.html";
-        loginbtn.classList.toggle("hidebtn");
         alert('Bienvenid@ ' + username + ' acabas de iniciar sesion exitosamente');
     } else {
         alert('Por favor valida tus datos');
