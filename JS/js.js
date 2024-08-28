@@ -99,6 +99,7 @@ function login() {
     let username = document.getElementById('username').value
     let password = document.getElementById('password').value
     let sPassword = localStorage.getItem(username)
+
     if (!username || !password) {
         alert('Debe ingresar nombre de usuario y contraseña')
     }else if (!sPassword) {
@@ -112,8 +113,4 @@ function login() {
         alert('Por favor valida tus datos');
 
     }
-
-
-
-
 }
