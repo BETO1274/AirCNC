@@ -1,5 +1,15 @@
 
+/*----------------------VARIABLES----------------------------*/
+let navBar = document.getElementById("navBar");
+let loginbtn =document.getElementById("loginbtn");
+
 /*----------------------------------------------------------FUNCIONES-----------------------------------------------------*/
+
+
+function togglebtn() {
+    navBar.classList.toggle("hidemenu")
+}
+
 
 
 function validateUsername(username) {
@@ -29,8 +39,6 @@ function validateUsername(username) {
 // Función para validar la contraseña
 function validatePassword(password) {
 
-
-    password = password.trim();
 
     // Verificar longitud
     if (password.length < 12 || password.length > 20) {
@@ -80,7 +88,7 @@ function registry() {
 
     } else {
 
-        localStorage.setItem(username, trim.password);
+        localStorage.setItem(username, password);
         window.location.href = 'index.html'
     }
 
@@ -90,16 +98,15 @@ function registry() {
 function login() {
     let username = document.getElementById('username').value
     let password = document.getElementById('password').value
-
+    let sPassword = localStorage.getItem(username)
     if (!username || !password) {
         alert('Debe ingresar nombre de usuario y contraseña')
-    }
-
-    let sPassword = localStorage.getItem(username)
-    if (!sPassword) {
+    }else if (!sPassword) {
         alert('!Upss¡ no te hemos encontrado, valida tu usuario o registrate');
+        return 0;
     } else if (password === sPassword) {
-        window.location.href="index.html";
+        window.location.href = "index.html";
+        loginbtn.classList.toggle("hidebtn");
         alert('Bienvenid@ ' + username + ' acabas de iniciar sesion exitosamente');
     } else {
         alert('Por favor valida tus datos');
